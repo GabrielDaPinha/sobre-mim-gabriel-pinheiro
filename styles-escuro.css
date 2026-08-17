@@ -1,0 +1,132 @@
+:root {
+    --bg-color: #121212;     /* fundo escuro */
+    --text-color: #f8f9fa;   /* texto claro */
+}
+
+
+/* cores escuras */
+html {
+    --bg-color: #121212;     /* fundo escuro */
+    --text-color: #f8f9fa;   /* texto claro */
+}
+
+/*isso força o html a usar as cores css e não do bootstrap*/
+html, body {
+    background-color: var(--bg-color) !important;
+    color: var(--text-color) !important;
+    transition: background-color 0.4s ease, color 0.4s ease; /* hover pra trocar os modos devagar */
+}
+
+/* muda a cor da navbar tb*/
+html .navbar {
+    background-color: #1f1f1fb4 !important;
+    transition: background-color 0.4s ease;/* hover pra trocar os modos devagar */
+    backdrop-filter: blur(18px);
+}
+
+/* muda a cor do texto da nav*/
+html .navbar-brand {
+    color: #f8f9fa !important;
+}
+/* faz o botao escurecer no modo escuro*/
+html .botao-maior {
+    color: #f8f9fa;          /* Texto branco */
+    border-color: #f8f9fa;   /* Borda branca */
+    background-color: transparent;
+}
+
+
+/* arrumando a mini biografia e foto*/
+/*acabei deixando para todas as imagens*/
+.foto-perfil {
+    width: 100% !important;
+    height: auto !important;
+    max-width: 100% !important;
+    padding: 5% !important;
+}
+
+/*fontes*/
+.inter-400 {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.inter-900 {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+}
+
+/*neons*/
+.neon-azul-vazado {
+    color: transparent !important;
+    -webkit-text-stroke: 1px #00d2ff;
+    filter: drop-shadow(0 0 5px #00d2ff);
+}
+.neon-azul {
+    color: #00d2ff !important;
+    text-shadow: 0 0 3px rgba(0, 210, 255, 0.4),
+        0 0 6px rgba(0, 210, 255, 0.2);
+    display: inline-block;
+}
+
+.neon-verde-vazado {
+    color: transparent !important;
+    -webkit-text-stroke: 1px #00ff66;
+    filter: drop-shadow(0 0 5px #00ff66);
+}
+.neon-verde {
+    color: #00ff66 !important;
+    text-shadow: 0 0 3px rgba(0, 255, 102, 0.4),
+        0 0 6px rgba(0, 255, 102, 0.2);
+    display: inline-block;
+}
+
+.neon-amarelo-vazado {
+    color: transparent !important;
+    -webkit-text-stroke: 1px #ffe600;
+    filter: drop-shadow(0 0 5px #ffe600);
+}
+.neon-amarelo {
+    color: #ffe600 !important;
+    text-shadow: 0 0 3px rgba(255, 230, 0, 0.4),
+        0 0 6px rgba(255, 230, 0, 0.2);
+    display: inline-block;
+}
+
+.neon-vermelho-vazado {
+    color: transparent !important;
+    -webkit-text-stroke: 1px #ff0033;
+    filter: drop-shadow(0 0 50px #ff0033);
+}
+.neon-vermelho {
+    color: #ff0033 !important;
+    text-shadow: 0 0 3px rgba(255, 0, 51, 0.4),
+        0 0 6px rgba(255, 0, 51, 0.2);
+    display: inline-block;
+}
+
+/*degrades*/
+.sessao-1 {
+    background: linear-gradient(90deg, #121212 0%, #7a1f1f77 100%, transparent 100%) !important;
+}
+.sessao-2 {
+    background: linear-gradient(90deg, #2c6e1f62 0%, #121212 100%, transparent 100%) !important;
+}
+.sessao-3 {
+    background: linear-gradient(90deg, #121212 0%, #ff730046 100%, transparent 100%) !important;
+}
+.sessao-4 {
+    background: linear-gradient(90deg, #00e5ff42 0%, #121212 100%, transparent 100%) !important;
+}
+
+html .conteudo-escuro .container {
+    max-width: 100% !important;/* Remove o limite de largura do bootstrap */
+    width: 100% !important;
+    padding-left: 5vw !important;/* Da um espaço nas bordas para o texto não colar no canto */
+    padding-right: 5vw !important;
+    color: #f8f9fa !important;
+    transition: background 0.4s ease, color 0.4s ease;
+}
